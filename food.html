@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+    
+        .container{
+            font-size: 62.5%;
+            font-style: Arvo;
+            background-image:linear-gradient(rgba(0, 0, 0, 0.26),rgba(0, 0, 0, 0.322)), url("meal.jpg");
+            background-size: cover;
+            background-position: center;
+            /* background-repeat: no-repeat; */
+        
+            
+ 
+        }
+        .sub-container{
+            max-width:120rem;
+            padding: 0 4.0rem;
+            color:#fff;
+        }
+        header{
+            
+            background-color: black;
+            border-radius: 9px;
+            
+        
+        }
+        .nav-header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 1.5rem 1.5rem 1.0rem 1.8rem;
+            padding: 1.1rem 0;
+
+        }
+        .logo{
+            font-size: 1.1rem;
+            font-weight: 700;
+            color:#fff
+        }
+
+        .nav-btn{
+            display: flex;
+            align-items: center;
+            gap: 2.0rem;
+            list-style: none;
+            
+        }
+        .main-text{
+            width: 30%;   
+            background-color: #000;
+            border-radius: 9px;
+            padding: 8.0rem 3.0rem;
+        }
+        article{
+            text-align: center;
+
+        }
+                
+        .headline{
+            font-size: 2.0rem;
+            font-weight: 700;
+            letter-spacing: 1.0;
+            line-height: 1.0;
+            margin-bottom: 1.5rem;
+        }
+        .main-text p{
+            font-size: 1.1rem;
+            line-height: 1.5;
+            color: #888;
+        }
+        article p{
+            margin-bottom: 4.0rem;
+        }
+
+        .contact-section{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            justify-content: space-between;
+            align-items: center;
+            gap:10rem;
+            background-color: #000;
+            border-radius: 9px;
+            margin-top: 3rem;
+            margin-bottom: 0.2rem;
+            padding: 1.0rem 2.0rem;
+        }
+        aside{
+            font-size: 0.5rem;
+            background-color: #000;
+            border-radius: 9px;
+            text-align: center;
+        }
+
+        .btn{
+            transition: all 0.5s;
+        }
+
+        .btn:link,
+        .btn:visited{
+            text-decoration: none;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+        .btn:hover,
+        .btn:active{
+            text-decoration: underline;
+            color: #999;
+
+        }
+
+        .last-btn{
+            border: 1px solid #fff;
+            padding: 0.5rem 1.0rem;
+            border-radius: 9px;
+        }
+        .open-days-and-time, .company-addy{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            font-size: 0.8rem;
+        }
+        .company-addy{
+            justify-self: center;
+        }
+        
+        .social-platform{
+            display: flex;
+            flex-direction: column;
+            gap:0.5rem;
+            justify-self: end;
+            font-size: 1.0rem;
+        }
+        .social-icon{
+            display: flex;
+            gap:0.5rem;
+            transform: all 0.5s;
+        
+            
+        }
+        .icn{
+            color:#fff;
+        }
+        
+       .icn:hover,
+        .icn:active{
+            transform: scale(1.5);
+            color:#777;
+       }
+        .nav-icon{
+            font-size: 1.2rem;
+        }
+        .login{
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Inter:wght@300;400;500;600&family=League+Spartan:wght@200;400;600&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Laureyfoods</title>
+</head>
+<body>
+    <main class="container">
+        <section class="sub-container">
+            <header>
+                <div class="nav-header">
+                    <h4 class="logo">Laurey</h4>
+                    <nav>
+                        <ul class="nav-btn">
+                            <li><a class="btn" href='#'>About</a></li>
+                            <li><a  class="btn" href='#'>Menu</a></li>
+                            <li><a class="btn" href='#'>Book a Table</a></li>
+                            <li><a class="btn" href='#'>Contact</a></li>
+                            <li class="login">
+                                <ion-icon class='nav-icon'name="person-circle-outline"></ion-icon><a class="btn" href='#'>Log In</a></li>
+                            <li ><a class="last-btn btn"  href='#'>Place Order</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <section class="main-text">
+                <article>
+                    <h3 class="headline">More Flavor for less</h3>
+                    <p>Hungry? Then why don't you treat yourself tonight to one of our delicious takeaways</p>
+                    <a class="last-btn btn" href='#'>Place Order</a>
+                </article>
+            </section>
+
+            <footer class="contact-section">
+                <div class="open-days-and-time">
+                    <p>Mon - Friday: 11am - 10pm</p>
+                    <p>Sat - Sun: 11am - 12pm</p>
+                </div>
+                <div class="company-addy">
+                    <p>500 Eric-Moore Estate</p>
+                    <p>Suruloro, Lagos 210000</p>
+                </div>
+
+                <div class="social-platform">
+                    <p>Follow Us</p>
+                    <div class="social-icon">
+                        <a href='https://twitter.com/' target='blank'><ion-icon class='icn'name="logo-twitter"></ion-icon></a>
+                        <a href='https://web.facebook.com/?_rdc=1&_rdr' target='blank'><ion-icon class='icn'name="logo-facebook"></ion-icon></a>
+                        <a href='https://www.instagram.com/' target='blank'><ion-icon class='icn' name="logo-instagram"></ion-icon></a>
+                    </div>
+                 </div>
+            </footer>
+
+            <aside>&COPY;2028 by Laurey.</aside>
+        </section>
+    </main>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+</html>
